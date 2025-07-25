@@ -1,0 +1,228 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body.fade-out{
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(1.05); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url(img7.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+
+
+.login-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border: 2px solid rgba(255,255,255,.9);
+    box-shadow: 1px 2px 20px ;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 800;
+    color: blue;
+    text-align: center;
+    transition: transform 0.7s ease;
+}
+
+h2:hover{
+    transform: scale(1.2);
+}
+
+.input-box{
+    position: relative;
+   width: 310px;
+   margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1.5px solid rgb(3, 252, 3);
+  background: transparent;
+  outline:none;
+  color:black;
+}
+
+.input-box label {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  color: black;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-box input:focus + label,
+.input-box input.not-empty + label {
+  top: -10px;
+  font-size: 16px;
+  color:black;
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color:black;
+}
+
+.remember-forgot{
+    margin: -15px 0 15px;
+    font-size: 1em;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.remember-forgot label input{
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.button {
+    position: relative;
+    width: 50%;
+    height: 40px;
+    background: rgb(10, 10, 217);
+    border-radius: 40px;
+    display: flex;                 
+    align-items: center;            
+    justify-content: center;      
+    cursor: pointer;
+    transition: background 0.4s ease;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.button:hover {
+    background: rgb(71,71, 241);
+}
+
+.button a {
+    text-decoration: none;            /* ➕ Supprime le soulignement */
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.register-link{
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link p a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+
+.register-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(100px);
+}
+
+
+/* Conteneur global invisible, mais qu'on va animer */
+#login, #register {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+
+#login {
+  z-index: 2;
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+#register {
+  z-index: 1;
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+
+.flipped #login {
+  transform: rotateY(-180deg);
+  transition: transform 2s ease;
+  opacity: 0;
+}
+
+.flipped #register {
+  transform: rotateY(0deg);  
+transition: transform 2s ease;
+  opacity: 1;
+  z-index: 3;
+}
+
+body {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+#backLogin{
+    margin-left: 17px;
+    color: blue;
+}
+
+
+.register-link  a{
+    margin: 15px;
+}

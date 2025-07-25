@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f4f8;
+    }
+    .container {
+      width: 700px;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .container h1 {
+      text-align: center;
+      color: #333;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .field {
+      flex: 1;
+    }
+    .field h3 {
+      margin-bottom: 8px;
+      font-size: 16px;
+      color: #555;
+    }
+    .input-field {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    .input-field input {
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+    .card-number {
+      margin-top: 10px;
+    }
+    .expiration {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .expiration select {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      flex: 1;
+    }
+    .cards {
+      display: flex;
+      gap: 10px;
+    }
+    .cards img {
+      width: 60px;
+      height: auto;
+    }
+    .confirm-btn {
+      margin-top: 20px;
+      background-color: blueviolet;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .confirm-btn:hover{
+      background-color: dodgerblue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Confirm Your Payment</h1>
+
+    <div class="row">
+      <div class="field">
+        <h3>Card Owner</h3>
+        <div class="input-field">
+          <input type="text" placeholder="Enter owner's name">
+        </div>
+      </div>
+
+      <div class="field">
+        <h3>CVV</h3>
+        <div class="input-field">
+          <input type="password" placeholder="***">
+        </div>
+      </div>
+    </div>
+
+    <div class="card-number">
+      <h3>Card Number</h3>
+      <div class="input-field">
+        <input type="text" placeholder="8456 2344 3344 1122">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <h3>Expiration Date</h3>
+        <div class="expiration">
+          <select name="month" id="month">
+            <option>Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+
+          <select name="year" id="year">
+            <option>Year</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="cards">
+        <img src="pay1.png" alt="Visa">
+        <img src="pay2.webp" alt="Mastercard">
+        <img src="pay3.png" alt="Amex">
+      </div>
+    </div>
+    <a href="loggin.html" class="confirm-btn">Confirm</a>
+  </div>
+
+  <script>
+     
+  </script>
+</body>
+</html>

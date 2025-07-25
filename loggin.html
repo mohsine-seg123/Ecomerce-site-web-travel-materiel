@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping website</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <header>
+        <div class="nav container">
+             <a href="#" class="logo">
+                 <img src="images/logo.png" alt="Camping Logo">
+             </a>
+             <div class="navbar">
+                    <a href="#category" class="nav-link">Category</a>
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#tips" class="nav-link">Blog</a>
+                    <a href="#backpack" class="nav-link">About Us</a>
+                    <a href="#" class="nav-link">Contact Us</a>
+             </div>
+
+             <div class="nav-right">
+                     <i class="ri-search-line"></i>
+                     <a href="index.html" class="login-btn" id="link"> Login/Register</a>
+                     <i class="fas fa-shopping-cart" class="fa-shopping-cart"></i>
+                     <div class="menu-icon">
+                        <div class="line1"></div>
+                           <div class="line2"></div>
+                              <div class="line3"></div>
+                     </div>
+             </div>
+        </div>
+    </header> 
+  
+    <section class="hero" id="hero">
+       <img class="hero-bg" src="images/hero-bg.png" alt=""/>
+
+       <div class="hero-content container">
+          <h2>We have the <span>equipement</span> for your trip like this!</h2>
+            <div class="hero-btn">
+                <a href="#" class="btn">
+                    <span>View Products</span>
+                     <img src="images/arrow-right.png" alt=""/>
+                </a>
+             </div>
+           <div class="hero-img">
+               <img src="images/hero.png" alt="" />
+           </div>
+       </div>
+
+       <div class="category container" id="category"> 
+            <a href="#products">
+                <img src="images/bottom-scroll.png" alt="" class="scroll-bottom"/>
+            </a>
+            <div class="category-content">
+                <div class="image-wrapper">
+                   <span></span>
+                   <img src="images/category-bg.png" alt="" class="category-img-1" />
+                   <img src="images/category-bg.png" alt="" class="category-img-2" />
+                </div>
+                <h2>Product Category</h2>
+    <div class="swiper categorySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+           <div class="category-box">
+               <img src="images/category-1.png" alt=""/>
+               <h3>Torch</h3>
+           </div>
+      </div>
+        <div class="swiper-slide">
+           <div class="category-box">
+               <img src="images/category-2.png" alt=""/>
+               <h3>Mug</h3>
+           </div>
+      </div>
+        <div class="swiper-slide">
+           <div class="category-box">
+               <img src="images/category-3.png" alt=""/>
+               <h3>Chair</h3>
+           </div>
+      </div>
+        <div class="swiper-slide">
+           <div class="category-box">
+               <img src="images/category-4.png" alt=""/>
+               <h3>Bag</h3>
+           </div>
+      </div>
+        <div class="swiper-slide">
+           <div class="category-box">
+               <img src="images/category-5.png" alt=""/>
+               <h3>Camping Tent</h3>
+           </div>
+      </div>
+        <div class="swiper-slide">
+           <div class="category-box">
+               <img src="images/category-6.png" alt=""/>
+               <h3>Sleeping Bag</h3>
+           </div>
+      </div>
+    </div>
+       </div>
+       <div class="swiper-btn">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="products container" id="products">
+      <p class="product-desc">
+             Professional equipement, unforgettable adventures We believe that every 
+             trip to nature can become a unique and memorable experience 
+             .for this reason ,we have provided the best and highest quality camping 
+             and travel equipement for you, from light and compact tents to cooking and 
+             lighting equipement, everything is ready for you to go into the heart og 
+             nature without worry.
+      </p>
+
+      <div class="product-content">
+          <div class="product-box">
+               <span>30%</span>
+               <img src="images/product-1.png" alt="">
+                <h2>Folding Camping Table</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>4.5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>$300.00</p>
+                            <h3>$200.00</h3>
+                        </div>
+                        <a href="#">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                </div>
+          </div>
+          <div class="product-box">
+               <span>35%</span>
+               <img src="images/product-2.png" alt="">
+                <h2>Sport bottle</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>4</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>$200.00</p>
+                            <h3>$100.00</h3>
+                        </div>
+                        <a href="#">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                </div>
+          </div>
+          <div class="product-box">
+               <span>20%</span>
+               <img src="images/product-3.png" alt="">
+                <h2>Camping Tente</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>3.5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>$700.00</p>
+                            <h3>$500.00</h3>
+                        </div>
+                        <a href="#">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                </div>
+          </div>
+      </div>
+    </section>
+
+    
+    <section id="backpack" class="backpack container">
+         <div class="backpack-content">
+             <img src="images/backpack-grid.png" alt="" class="backpack-grid">
+             <h2>Backpack Series <br><span>Jack WolfSkin</span></h2>
+             <p>
+                The ergonomic design and medical back of the Jack Wolfskin serie is 
+                suitable for long-term carrying and puts the least pressure on your 
+                nack and back!!
+             </p>
+             <a href="#" class="btn">
+                <span>View Products</span>
+                <img src="images/arrow-right.png" alt=""/>
+             </a>
+         </div>
+         <img src="images/backpack.png" alt="" class="backpack-img">
+    </section>
+
+
+    
+    <section class="selling container" id="selling">
+       <div class="selling-heading">
+         <h2>Best Selling</h2>
+          <a href="#" class="btn">
+                <span>View Products</span>
+                <img src="images/arrow-right.png" alt=""/>
+             </a>
+       </div>
+
+       <div class="swiper selling-slider">
+            <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                     <div class="product-box">
+               <span>30%</span>
+               <img src="images/selling-1.png" alt="">
+                <h2>Small Sun Headlight</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>4.5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>300.00MAD</p>
+                            <h3>200.00MAD</h3>
+                        </div>
+                        <a href="#cartSidebar">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                     </div>
+                     </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                     <div class="product-box">
+               <span>10%</span>
+               <img src="images/selling-3.png" alt="">
+                <h2>Sleeping bag</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>4.5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>230.00MAD</p>
+                            <h3>200.00MAD</h3>
+                        </div>
+                        <a href="#cartSidebar">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                     </div>
+                     </div>
+                </div>
+                <div class="swiper-slide">
+                     <div class="product-box">
+               <span>22%</span>
+               <img src="images/selling-2.png" alt="">
+                <h2>Sprint Sunglasses</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>4.5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>400.00MAD</p>
+                            <h3>300.00MAD</h3>
+                        </div>
+                        <a href="#cartSidebar">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                     </div>
+                     </div>
+                </div>
+                <div class="swiper-slide">
+                     <div class="product-box">
+               <span>10%</span>
+               <img src="images/selling-4.png" alt="">
+                <h2>Electric water Bottle</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>3.5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>300.00MAD</p>
+                            <h3>200.00MAD</h3>
+                        </div>
+                        <a href="#cartSidebar">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                     </div>
+                     </div>
+                </div>
+
+                <div class="swiper-slide">
+                     <div class="product-box">
+               <span>30%</span>
+               <img src="images/product-3.png" alt="">
+                <h2>Camping Tent</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>300.00MAD</p>
+                            <h3>200.00MAD</h3>
+                        </div>
+                        <a href="#cartSidebar">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                     </div>
+                     </div> 
+                </div>
+
+                  <div class="swiper-slide">
+                     <div class="product-box">
+               <span>35%</span>
+               <img src="images/category-3.png" alt="">
+                <h2>Small Sun Headlight</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>4</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>300.00MAD</p>
+                            <h3>200.00MAD</h3>
+                        </div>
+                        <a href="#cartSidebar">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                     </div>
+                     </div>
+                </div>
+
+                 <div class="swiper-slide">
+                     <div class="product-box">
+               <span>30%</span>
+               <img src="images/category-2.png" alt="">
+                <h2>Small Sun Headlight</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>4.5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>300.00MAD</p>
+                            <h3>200.00MAD</h3>
+                        </div>
+                        <a href="#cartSidebar">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                     </div>
+                     </div>
+                </div>
+
+                 <div class="swiper-slide">
+                     <div class="product-box">
+               <span>20%</span>
+               <img src="images/category-1.png" alt="">
+                <h2>Small Sun Headlight</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>4.5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>300.00MAD</p>
+                            <h3>200.00MAD</h3>
+                        </div>
+                        <a href="#cartSidebar">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                     </div>
+                     </div>
+                </div>
+
+                 <div class="swiper-slide">
+                     <div class="product-box">
+               <span>30%</span>
+               <img src="images/category-4.png" alt="">
+                <h2>Small Sun Headlight</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>4.5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>150.00MAD</p>
+                            <h3>100.00MAD</h3>
+                        </div>
+                        <a href="#cartSidebar">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                     </div>
+                     </div>
+                </div>
+
+                 <div class="swiper-slide">
+                     <div class="product-box">
+               <span>35%</span>
+               <img src="images/category-5.png" alt="">
+                <h2>Small Sun Headlight</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>4.5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>359.00MAD</p>
+                            <h3>200.00MAD</h3>
+                        </div>
+                        <a href="#cartSidebar">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                     </div>
+                     </div>
+                </div>
+
+                 <div class="swiper-slide">
+                     <div class="product-box">
+               <span>25%</span>
+               <img src="images/category-6.png" alt="">
+                <h2>Small Sun Headlight</h2>
+                <div class="rating">
+                      <i class="ri-star-fill"></i>
+                      <p>4.5</p>
+                </div>
+                <div class="p-info">
+                        <div class="price">
+                            <p>300.00MAD</p>
+                            <h3>200.00MAD</h3>
+                        </div>
+                        <a href="#cartSidebar">
+                            <i class="ri-handbag-line"></i>
+                        </a>
+                     </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="slides-control">
+                  <div class="swiper-pagination"></div>
+                    <div class="swiper-btn">
+                           <div class="swiper-button-prev"></div>
+                           <div class="swiper-button-next"></div>
+                    </div>
+            </div>
+
+
+         <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+             <h2>Votre Panier</h2>
+             <span class="cart-close">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems">
+
+        </div>
+        <div class="totale" style="padding: 10px; border-top: 1px solid #ccc;">
+        <h3>Total : <span id="totalPrice">0 MAD</span></h3>
+         </div>
+        <div class="btnn">
+               <a href="#" id="payButton">Buy now</a>
+        </div>
+        </div>
+         </div>
+
+       </div>
+    </section>
+
+
+
+    <section class="brands" id="brands">
+            <div class="heading">Brands</div>
+                <div class="brand-container">
+                    <div class="brand-content container">
+                     <div class="brand-box">
+                        <img src="images/brand-1.png" alt="">
+                     </div>
+                       <div class="brand-box">
+                        <img src="images/brand-2.png" alt="">
+                     </div>
+                       <div class="brand-box">
+                        <img src="images/brand-3.png" alt="">
+                     </div>
+                       <div class="brand-box">
+                        <img src="images/brand-4.png" alt="">
+                     </div>
+                       <div class="brand-box">
+                        <img src="images/brand-5.png" alt="">
+                     </div>
+                       <div class="brand-box">
+                        <img src="images/brand-6.png" alt="">
+                     </div>
+                       <div class="brand-box">
+                        <img src="images/brand-7.png" alt="">
+                     </div>
+                       <div class="brand-box">
+                        <img src="images/brand-8.png" alt="">
+                     </div>
+                </div>
+                 </div>
+    </section>
+
+    <section class="tips" id="tips">
+         <h2 class="heading">Camping Tips</h2>
+         <div class="tips-content container">
+             <div class="blog-box">  
+                <img src="images/blog-1.png" alt="">
+                <div class="blog-info">
+                     <span>Category</span>
+                     <h3>
+                        Checklist of important and necessary supplies for camping and travel
+                     </h3>
+                     <div class="read">
+                        <i class="ri-time-line"></i>
+                        <p>5 minutes read</p>
+                     </div>
+                </div>
+             </div>
+                 <div class="blog-box">  
+                <img src="images/blog-2.png" alt="">
+                <div class="blog-info">
+                     <span>Category</span>
+                     <h3>
+                        The best ways to make coffee while camping
+                     </h3>
+                     <div class="read">
+                        <i class="ri-time-line"></i>
+                        <p>5 minutes read</p>
+                     </div>
+                </div>
+             </div>
+
+             <div class="single-post">
+                <img src="images/blog-3.png" alt>
+                <div class="single-post-text">
+                      <div class="post-data">
+                        <h2>Checklist of important camping supplies</h2>
+                        <div class="read">
+                        <i class="ri-time-line"></i>
+                        <span>5 minutes read</span>
+                     </div>
+                     </div>
+                     <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+             </div>
+
+             <div class="links">
+                 <div class="link-box">
+                        <h3>important tips camping in winter</h3>
+                         <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+                 </div>
+                   <div class="link-box">
+                        <h3>introducing the best ecocamps in morroco</h3>
+                         <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+                 </div>
+                   <div class="link-box">
+                        <h3>Guide to buying the best camping tent</h3>
+                         <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+                 </div>
+                   <div class="link-box">
+                        <h3>The rechargeable and battery fixed heads</h3>
+                         <a href="#"><i class="ri-arrow-right-up-line"></i></a>
+                 </div>
+             </div>
+         </div>
+    </section>
+
+    <div class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <h3>Product <span>Categories</span></h3>
+                <a href="#" class="footer-link">Camping Tent</a>
+                 <a href="#" class="footer-link">Backpack</a>
+                  <a href="#" class="footer-link">Flask and Mug</a>
+                   <a href="#" class="footer-link">Sleeping Bag</a>
+            </div>
+             <div class="footer-box footer-center">
+                <a href="#" class="logo">
+                   <img src="images/logo.png" alt="">
+                </a>
+                <p>Professional equipement for unforgettable adventures</p>
+
+                <div class="social">
+                    <a href="#"><i class="ri-telegram-fill"></i></a>
+                      <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="#"><i class="ri-whatsapp-line"></i></a>
+                          <a href="#"><i class="ri-twitter-x-line"></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Important <span>Links</span></h3>
+                <a href="#" class="footer-link">Blog</a>
+                <a href="#" class="footer-link">Products</a>
+                <a href="#" class="footer-link">About Us</a>
+                <a href="#" class="footer-link">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
